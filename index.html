@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Grocery Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#fruits-vegetables">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="fruits-vegetables">
+        <h2>Fruits and Vegetables</h2>
+        <div class="product-list">
+            <div class="product">
+                <img class="fruit" src="apples.jpg" alt="Apple">
+                <h3>Apple</h3>
+                <p>$2 per kg</p>
+                <button onclick="addToCart('Apple', 2)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="fruit" src="bananas.jpg" alt="Banana">
+                <h3>Banana</h3>
+                <p>$1 per kg</p>
+                <button onclick="addToCart('Banana', 1)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="dairy-products">
+        <h2>Dairy Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img class="fruit" src="milk.jpeg" alt="Milk">
+                <h3>Milk</h3>
+                <p>$3 per liter</p>
+                <button onclick="addToCart('Milk', 3)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="fruit" src="cheese.jpeg" alt="Cheese">
+                <h3>Cheese</h3>
+                <p>$5 per pack</p>
+                <button onclick="addToCart('Cheese', 5)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="meat">
+        <h2>Meat</h2>
+        <div class="product-list">
+            <div class="product">
+                <img class="fruit" src="chicken.jpeg" alt="Chicken">
+                <h3>Chicken</h3>
+                <p>$8 per kg</p>
+                <button onclick="addToCart('Chicken', 8)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img class="fruit" src="egg.jpeg" alt="Egg">
+                <h3>Egg</h3>
+                <p>$1 per Pcs</p>
+                <button onclick="addToCart('Egg', 12)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0</span></p>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
